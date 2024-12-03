@@ -4,23 +4,6 @@ namespace AoC.Days
 {
     public class Day2 : Day
     {
-        private List<List<int>> ParseInput(List<string> lines)
-        {
-            var values = new List<List<int>>();
-            foreach (var line in lines)
-            {
-                var items = new List<int>();
-
-                foreach (var item in line.Split(" "))
-                {
-                    items.Add(int.Parse(item));
-                }
-                values.Add(items);
-            }
-
-            return values;
-        }
-
         protected override void DoPart1(List<string> lines, out int val)
         {
             var reports = ParseInput(lines);
