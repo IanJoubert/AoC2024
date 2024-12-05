@@ -25,7 +25,7 @@ namespace AoC.Days
             val = total;
         }
 
-        private bool DoCheck(string[] parts, Dictionary<string, List<string>> lookup)
+        private static bool DoCheck(string[] parts, Dictionary<string, List<string>> lookup)
         {
             for (var i = 0; i < parts.Length; i++)
             {
